@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="10dp"
+    android:id="@+id/card_view"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?selectableItemBackground">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/image_view"
+            android:src="@mipmap/ic_launcher"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/title"
+            android:text="TITLE"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/description"
+            android:text="Description"
+            android:textSize="18dp"
+            android:textColor="@android:color/darker_gray"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/published_by"
+            android:text="published by"
+            android:textSize="14dp"
+            android:textColor="@android:color/darker_gray"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
